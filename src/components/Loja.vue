@@ -29,8 +29,11 @@ export default {
                 preco: this.preco
             }
             this.sequencia++
-            // eslint-disable-next-line
-            console.log(produto)
+
+            this.$store.commit('adicionarProduto', produto)
+            //this.$store.state.produtos.push(produto)
+                // eslint-disable-next-line
+             //   console.log(produto)
         }
     }
 }
